@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Paradise Resort</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🌴 Paradise Resort</h1>
+  </header>
+
+  <!-- Image Carousel -->
+  <section class="carousel">
+    <img id="slider" src="https://picsum.photos/800/300?1">
+    <br>
+    <button onclick="prevImage()">Previous</button>
+    <button onclick="nextImage()">Next</button>
+  </section>
+
+  <!-- Booking Form -->
+  <section class="booking">
+    <h2>Book Your Stay</h2>
+    <form id="bookingForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="date" id="checkin" required>
+      <input type="date" id="checkout" required>
+
+      <select id="room">
+        <option value="2000">Standard - ₹2000</option>
+        <option value="4000">Deluxe - ₹4000</option>
+        <option value="6000">Suite - ₹6000</option>
+      </select>
+
+      <button type="submit">Book Now</button>
+    </form>
+
+    <p id="total"></p>
+  </section>
+
+  <!-- API Section -->
+  <section class="api">
+    <h2>Travel Tip</h2>
+    <button onclick="getJoke()">Get Travel Tip</button>
+    <p id="joke"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
